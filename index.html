@@ -32,22 +32,6 @@
             color: #2980b9;
         }
 
-        table {
-            border-collapse: collapse;
-            width: 60%;
-            margin: 10px 0;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-
-        th {
-            background-color: #3498db;
-            color: white;
-        }
-
         ul {
             background-color: #e8f4fd;
             padding: 10px;
@@ -60,12 +44,41 @@
             border-radius: 10px;
         }
 
-        td a {
+        /* CARD DESIGN */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 15px;
+            width: 250px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        .card a {
+            display: block;
+            margin: 5px 0;
             color: #2980b9;
             text-decoration: none;
         }
 
-        td a:hover {
+        .card a:hover {
             text-decoration: underline;
         }
     </style>
@@ -100,35 +113,36 @@ My goals are to become a civil engineer or, for the time being, a bartender.
 </ul>
 
 <h2>My Favorite Things</h2>
-<table>
-    <tr>
-        <th>Category</th>
-        <th>Favorite</th>
-    </tr>
-    <tr>
-        <td>Movies</td>
-        <td>
-            <a href="https://ww4.fmovies.co/film/the-wave-6998/" target="_blank">The Wave</a>, 
-            <a href="https://ww4.fmovies.co/film/war-machine-1630860913/" target="_blank">War Machine</a>, 
-            <a href="https://ww4.fmovies.co/film/fantastic-four-2005-3347/" target="_blank">Fantastic 4</a>, 
-            <a href="https://ww4.fmovies.co/film/men-in-black-2296/" target="_blank">Men in Black</a>
-        </td>
-    </tr>
-    <tr>
-        <td>Games</td>
-        <td>CODM, ML, Roblox, R.E.P.O, Burglin Gnomes</td>
-    </tr>
-    <tr>
-        <td>Food</td>
-        <td>
-            <a href="https://youtu.be/sdVZwIVetr0?si=qgjDBjWPf1SA1epf" target="_blank">Sisig</a>, 
-            <a href="https://youtu.be/PhoterNJB2Q?si=zYKlm_kcrDP9u_He" target="_blank">Bulalo</a>, 
-            <a href="https://youtu.be/mhAb8XDH0SY?si=zUuQBmBaNTnZWTof" target="_blank">Bistek</a>, 
-            <a href="https://youtu.be/3f8s07X79jY?si=3gw70GaJ7NgVty-W" target="_blank">Fried Chicken</a>, 
-            <a href="https://youtu.be/dhwvT1iYS7Y?si=uihLXj6b9JcSxz6y" target="_blank">Shanghai</a>
-        </td>
-    </tr>
-</table>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>🎬 Movies</h3>
+        <a href="https://ww4.fmovies.co/film/the-wave-6998/" target="_blank">The Wave</a>
+        <a href="https://ww4.fmovies.co/film/war-machine-1630860913/" target="_blank">War Machine</a>
+        <a href="https://ww4.fmovies.co/film/fantastic-four-2005-3347/" target="_blank">Fantastic 4</a>
+        <a href="https://ww4.fmovies.co/film/men-in-black-2296/" target="_blank">Men in Black</a>
+    </div>
+
+    <div class="card">
+        <h3>🎮 Games</h3>
+        <a href="https://www.callofduty.com/mobile" target="_blank">CODM</a>
+        <a href="https://m.mobilelegends.com/" target="_blank">ML</a>
+        <a href="https://www.roblox.com/" target="_blank">Roblox</a>
+        <a href="https://store.steampowered.com/" target="_blank">R.E.P.O</a>
+        <a href="https://store.steampowered.com/" target="_blank">Burglin Gnomes</a>
+    </div>
+
+    <div class="card">
+        <h3>🍗 Food</h3>
+        <a href="https://youtu.be/sdVZwIVetr0?si=qgjDBjWPf1SA1epf" target="_blank">Sisig</a>
+        <a href="https://youtu.be/PhoterNJB2Q?si=zYKlm_kcrDP9u_He" target="_blank">Bulalo</a>
+        <a href="https://youtu.be/mhAb8XDH0SY?si=zUuQBmBaNTnZWTof" target="_blank">Bistek</a>
+        <a href="https://youtu.be/3f8s07X79jY?si=3gw70GaJ7NgVty-W" target="_blank">Fried Chicken</a>
+        <a href="https://youtu.be/dhwvT1iYS7Y?si=uihLXj6b9JcSxz6y" target="_blank">Shanghai</a>
+    </div>
+
+</div>
 
 <img src="4.jpeg" alt="missu" width="200">
 
